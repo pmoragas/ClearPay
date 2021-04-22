@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ItemController {
 
-    @GetMapping("/hola")
+    @GetMapping("/")
     @ResponseBody
-    public String hola() {
+    public String root() {
 
-        return "has hecho una peticion get";
+        return "Welcome to ClearPayAPI";
 
     }
 }

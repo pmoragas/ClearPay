@@ -1,0 +1,29 @@
+@import '~styles/colors';
+
+.container {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
+
+    .link {
+        text-decoration: inherit;
+        color: inherit;
+
+        &:visited {
+            text-decoration: inherit;
+            color: inherit;
+          }
+
+         &:hover {
+            text-decoration: inherit;
+            color: inherit;
+          }
+
+          &:active {
+            text-decoration: inherit;
+            color: inherit;
+          }
+      }
+
+
+}

@@ -1,0 +1,1 @@
+export const WALLETS_UPDATE = 'CHARACTERS_UPDATE';
