@@ -13,7 +13,7 @@ const App = ({children}) => {
           className={styles.link}
           to={CUSTOMERS_PATH}
         >
-          <img className={styles.logo} src={''} alt="Rick Morty Logo"/>
+          clearpay
         </Link>
         <button onClick={()=> dispatch(logout())}>Logout</button>
       </div>

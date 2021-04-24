@@ -1,23 +1,33 @@
 @import '~styles/colors';
 
 .container {
-    padding: 0 30px;
+    font-family: sans-serif;
+    padding: 30px 30px;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
 
+    table {
+      width: 100%;
+    }
+
     .link {
         text-decoration: inherit;
-        color: inherit;
+        color: $tertiary;
+        font-weight: 600;
+        font-size: 16px;
+        border: solid 1px rgba($secondary, 0.5);
+        background-color: rgba($primary, 0.16);
+        padding: 5px;
 
         &:visited {
             text-decoration: inherit;
             color: inherit;
           }
 
-         &:hover {
+          &:hover {
             text-decoration: inherit;
-            color: inherit;
-          }
+            background-color: rgba($secondary, 0.5);
+        }
 
           &:active {
             text-decoration: inherit;

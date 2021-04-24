@@ -13,30 +13,32 @@ const FormLogin = ({ onSubmitForm, className }) => {
 
 	return (
 		<div className={classnames(styles.formContainer, className)}>
-			<div className={styles.loginTitle}>Login</div>
-			<form onSubmit={handleSubmit(onSubmit)}>
-                <div className={styles.inputWrapper} >
-                    <div className={styles.label}>Email</div>
-                    <input label='Email' name="email" required {...register('email')}/>
-                </div>
-                <div className={styles.inputWrapper}>
-                    <div className={styles.label}>Password</div>
-                    <input
-                        label='Password'
-                        name="password"
-                        required
-                        {...register('password')}
-                        type="password"
-                        className={styles.password}
-                    />
-                </div>
+			<div className={styles.loginTitle}>clearpay admin</div>
+			<div className={styles.formWrapper}>
+				<form onSubmit={handleSubmit(onSubmit)}>
+					<div className={styles.inputWrapper} >
+						<div className={styles.label}>Email</div>
+						<input label='Email' name="email" required {...register('email')}/>
+					</div>
+					<div className={styles.inputWrapper}>
+						<div className={styles.label}>Password</div>
+						<input
+							label='Password'
+							name="password"
+							required
+							{...register('password')}
+							type="password"
+							className={styles.password}
+						/>
+					</div>
 
-				<div className={styles.buttonContainer}>
-					<button type="submit" className={styles.button}>
-						Submit
-					</button>
-				</div>
-			</form>
+					<div className={styles.buttonContainer}>
+						<button type="submit" className={styles.button}>
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	);
 };

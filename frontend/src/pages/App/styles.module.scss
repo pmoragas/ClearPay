@@ -1,11 +1,12 @@
 @import '~styles/colors';
 
-$headerHeight: 88px;
+$headerHeight: 60px;
 
 .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: sans-serif;
 
     .header {
         display: flex;
@@ -13,18 +14,35 @@ $headerHeight: 88px;
         align-items: center;
         height: $headerHeight;
         width: 100%;
+        background-color: $primary;
 
         .link {
             width: 210px;
-            .logo {
-                height: 55px;
-                padding: 10px;
-                border-radius: 20px;
+            font-weight: 600;
+            font-size: 36px;
+            color: $tertiary;
+            text-decoration: inherit;
+            padding: 10px;
+            text-align: center;
 
-                &:hover {
-                    background-color: rgba($primary, 0.4);
-                    cursor: pointer;
-                }
+            &:hover {
+                background-color: rgba($secondary, 0.4);
+                cursor: pointer;
+            }
+
+            &:visited {
+                text-decoration: inherit;
+                color: inherit;
+            }
+
+            &:hover {
+                text-decoration: inherit;
+                color: inherit;
+            }
+
+            &:active {
+                text-decoration: inherit;
+                color: inherit;
             }
 
         }
@@ -47,5 +65,11 @@ $headerHeight: 88px;
 
     .content {
         height: calc(100vh - #{$headerHeight});
+    }
+}
+
+:global {
+    body {
+        margin: 0;
     }
 }

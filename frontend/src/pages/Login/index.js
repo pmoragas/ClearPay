@@ -35,7 +35,6 @@ const Login = () => {
 
   return (
     <div className={styles.container}>
-      <img className={styles.logo} src={''} alt="Rick Morty Logo"/>
       <div className={styles.formContainer}>
         <FormLogin className={styles.formLogin} onSubmitForm={onSubmitForm} />
       </div>

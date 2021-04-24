@@ -9,7 +9,7 @@ const reducers = (state = INITIAL_STATE, { type, payload }) => {
 		case CUSTOMERS_UPDATE: {
 			return {
 				...state,
-				characters: Object.values(payload),
+				customers: Object.values(payload),
 			};
 		}
 		default:

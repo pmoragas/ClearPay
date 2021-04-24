@@ -3,7 +3,7 @@ import ClearPayApi from 'services/clearPayApi';
 
 export const login = (values) => async (dispatch) => {
 	try {
-		const user = await ClearPayApi.userSignin(values);
+		const user = { ...values, token: "dummyToken" };
 
 		if (user.token) {
 			localStorage.setItem('user', JSON.stringify(user));
