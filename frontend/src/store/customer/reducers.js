@@ -1,7 +1,8 @@
-import { CUSTOMERS_UPDATE } from './actionNames';
+import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE } from './actionNames';
 
 const INITIAL_STATE = {
 	customers: [],
+	customerDetail: {wallets: []}
 };
 
 const reducers = (state = INITIAL_STATE, { type, payload }) => {
@@ -10,6 +11,12 @@ const reducers = (state = INITIAL_STATE, { type, payload }) => {
 			return {
 				...state,
 				customers: Object.values(payload),
+			};
+		}
+		case CUSTOMER_DETAIL_UPDATE: {
+			return {
+				...state,
+				customerDetail: payload,
 			};
 		}
 		default:

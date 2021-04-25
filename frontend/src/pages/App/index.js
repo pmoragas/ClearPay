@@ -13,7 +13,7 @@ const App = ({children}) => {
           className={styles.link}
           to={CUSTOMERS_PATH}
         >
-          clearpay
+          {"clearpay"}
         </Link>
         <button onClick={()=> dispatch(logout())}>Logout</button>
       </div>

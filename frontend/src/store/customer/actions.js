@@ -36,7 +36,14 @@ export const getCustomers = () => async (dispatch) => {
 
 export const getCustomer = (id) => async (dispatch) => {
 	try {
-		const response = await ClearPayApi.getCustomer(id);
+		const response = {
+			"id":1,"first_name":"Tasha","last_name":"Vanni","email":"tvanni0@goo.gl",
+			wallets: [
+				{"id":"936ecfb72762807e58524acd8bff2799345b4873ddaddda3d26b94f91ecf7f70","amount":5393.91},
+				{"id":"965263ca7e66372ee19e72ee8c6b9bb8fe0f4d9c191dc40115be5f3b905dbae5","amount":7606.64},
+				{"id":"7da84d6386845ad99f39c806f705b414f921938f4bb760e8e4bb45dcfc28dbda","amount":5124.57},
+			]
+		};
 
 		dispatch({
             type: CUSTOMER_DETAIL_UPDATE,

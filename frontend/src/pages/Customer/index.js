@@ -52,7 +52,7 @@ const Character = () => {
         },
         {
             dataField: 'link',
-			text: '',
+			text: 'Link',
 			headerStyle: {
 				width: '15%',
 				textAlign: 'center',
@@ -68,6 +68,7 @@ const Character = () => {
 					</Link>
 				);
 			},
+            align: 'center',
         }
     ];
 

@@ -20,6 +20,7 @@ $headerHeight: 60px;
             width: 210px;
             font-weight: 600;
             font-size: 36px;
+            line-height: 36px;
             color: $tertiary;
             text-decoration: inherit;
             padding: 10px;
@@ -53,12 +54,13 @@ $headerHeight: 60px;
             margin: 10px;
             font-weight: 600;
             font-size: 16px;
-            border: solid 1px rgba($secondary, 0.5);
-            background-color: rgba($primary, 0.16);
-            color: $tertiary;
+            border: solid 1px rgba($tertiary, 1);
+            border-radius: .75rem;
+            background-color: rgba($tertiary, 1);
+            color: $white;
 
             &:hover {
-                background-color: rgba($secondary, 0.5);
+                opacity: 50%;;
             }
         }
     }

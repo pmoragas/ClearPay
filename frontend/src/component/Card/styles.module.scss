@@ -1,0 +1,88 @@
+@import '~styles/colors';
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    width: 700px;
+    height: 550px;
+    border-radius: 15px;
+    display: flex;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        border-radius: 15px 15px 0 0;
+        height:55px;
+        width: 100%;
+        background-color: $primary;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        line-height: 55px;
+    }
+
+    .subtitle {
+        font-weight: 600;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .dataPoint {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 30px;
+
+        .label {
+            border-bottom: 1px solid black;
+            font-weight: 600;
+        }
+    }
+
+    .destination {
+        border-top: 1px solid black;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px;
+            height: 100%;
+
+            label {
+                padding-top: 15px;
+                font-weight: 600;
+            }
+
+            input {
+                height: 40px;
+                font-size: 16px;
+
+            }
+
+            .buttonContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+
+                button {
+                    width: 150px;
+                    height: 40px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    border: unset;
+                    border-radius: .75rem;
+                    background-color: black;
+                    color: #ffffff;
+
+                    &:hover {
+                        background-color: rgba($secondary, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}

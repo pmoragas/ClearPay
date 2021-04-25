@@ -1,5 +1,64 @@
+@import '~styles/colors';
+
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+    .customerInfo {
+        height: 40%;
+        display: flex;
+
+
+        .personalInfo {
+            width: 50%;
+            padding: 30px;
+        }
+
+        .economicalInfo {
+            width: 50%;
+            padding: 30px;
+        }
+
+        .dataPoint {
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+
+            .label {
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+
+    .wallets {
+        height: 60%;
+        padding: 30px;
+
+        .rows {
+            height: 30px;
+
+            &:hover {
+                background-color: rgba(black,0.1);
+            }
+        }
+        table {
+            width: 100%;
+        }
+
+        .transferButton {
+            width: 100px;
+            font-weight: 600;
+            font-size: 16px;
+            color: $white;
+            text-align: center;
+            background-color: black;
+            border: unset;
+            border-radius: .75rem;
+
+            &:hover {
+                opacity: 50%;;
+            }
+        }
+    }
 }
