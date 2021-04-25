@@ -48,7 +48,7 @@ export const executeTransfer = (values) => async (dispatch) => {
 
 		let msg;
 		switch (status) {
-			case 400:
+			case 422:
 				msg = "The amount is invalid or the transfer is circular.";
 				break;
 			case 404:
