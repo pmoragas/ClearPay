@@ -21,7 +21,7 @@ const CharacterDetail = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedWallet, setSelectedWallet] = useState(undefined);
     const detailId = params.detailId ? parseInt(params.detailId, 10) : undefined;
-    const { customerDetail, hasDataChanged } = useSelector((state) => state.customer);
+    const { customerDetail, hasDataChanged, errorMsg } = useSelector((state) => state.customer);
 
     const onSubmitForm = (values) => {
         dispatch(executeTransfer(values));
@@ -72,6 +72,7 @@ const CharacterDetail = () => {
     ];
 
     useEffect(() => {
+        setIsModalVisible(false);
         dispatch(getCustomer(detailId));
     }, [dispatch, detailId, hasDataChanged]);
 
@@ -79,7 +80,7 @@ const CharacterDetail = () => {
 
         <div className={styles.container}>
             <Modal visible={isModalVisible} onClose={() => setIsModalVisible(false)}>
-                <Card wallet={selectedWallet} onSubmit={onSubmitForm}></Card>
+                <Card wallet={selectedWallet} onSubmit={onSubmitForm} errorMsg={errorMsg}></Card>
             </Modal>
             <div className={styles.customerInfo}>
                 <div className={styles.personalInfo}>

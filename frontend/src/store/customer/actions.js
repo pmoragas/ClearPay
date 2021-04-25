@@ -1,4 +1,4 @@
-import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE, TRANSFER_EXECUTED } from './actionNames';
+import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE, TRANSFER_EXECUTED, TRANSFER_ERROR } from './actionNames';
 import ClearPayApi from 'services/clearPayApi';
 
 export const getCustomers = () => async (dispatch) => {
@@ -29,15 +29,31 @@ export const getCustomer = (id) => async (dispatch) => {
 };
 
 export const executeTransfer = (values) => async (dispatch) => {
-	console.log(values);
 	try {
-		const response = await ClearPayApi.executeTransfer(values);
+		await ClearPayApi.executeTransfer(values);
 
 		dispatch({
             type: TRANSFER_EXECUTED,
             payload: {},
         });
 	} catch (error) {
-		console.log(error)
+		const { response: { status } = {} } = error;
+
+		let msg;
+		switch (status) {
+			case 400:
+				msg = "Wallet has no funds enough!";
+				break;
+			case 404:
+				msg = "Destination wallet has not been found!";
+				break;
+			default:
+				msg = "Error. Please try again.";
+		}
+
+		dispatch({
+            type: TRANSFER_ERROR,
+            payload: {errorMsg: msg},
+        });
 	}
 };

@@ -1,9 +1,10 @@
-import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE, TRANSFER_EXECUTED } from './actionNames';
+import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE, TRANSFER_EXECUTED, TRANSFER_ERROR } from './actionNames';
 
 const INITIAL_STATE = {
 	customers: [],
 	customerDetail: {wallets: []},
-	hasDataChanged: false
+	hasDataChanged: false,
+	errorMsg: undefined
 };
 
 const reducers = (state = INITIAL_STATE, { type, payload }) => {
@@ -25,7 +26,14 @@ const reducers = (state = INITIAL_STATE, { type, payload }) => {
 		case TRANSFER_EXECUTED: {
 			return {
 				...state,
-				hasDataChanged: true
+				hasDataChanged: true,
+				errorMsg: undefined
+			};
+		}
+		case TRANSFER_ERROR: {
+			return {
+				...state,
+				...payload
 			};
 		}
 		default:

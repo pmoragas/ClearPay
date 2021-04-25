@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import styles from './styles.module.scss';
 import { useForm } from 'react-hook-form';
 
-const Card = ({wallet, onSubmit}) => {
+const Card = ({wallet, onSubmit, errorMsg}) => {
     const { register, handleSubmit } = useForm();
 
     return (
@@ -47,12 +47,12 @@ const Card = ({wallet, onSubmit}) => {
                     className={styles.inputElem}
                 />
                 <div className={styles.buttonContainer}>
+                    <div className={styles.error}>{errorMsg}</div>
                     <button type="submit" className={styles.button}>
                         Submit
                     </button>
                 </div>
             </form>
-
         </div>
     );
 }
@@ -62,10 +62,12 @@ Card.propTypes = {
         id: PropTypes.string,
         amount: PropTypes.number
     }),
+    errorMsg: PropTypes.string
 };
 
 Card.default = {
-	wallet: {}
+	wallet: {},
+	errorMsg: undefined
 };
 
 export default Card;

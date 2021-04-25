@@ -65,7 +65,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
                 height: 100%;
+
+                .error {
+                    color: red;
+                }
 
                 button {
                     width: 150px;
