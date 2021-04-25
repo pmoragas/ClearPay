@@ -28,13 +28,13 @@
     .subtitle {
         font-weight: 600;
         font-size: 20px;
-        padding: 15px;
+        padding: 15px 0;
     }
 
     .dataPoint {
         display: flex;
         flex-direction: column;
-        padding: 15px 30px;
+        padding: 15px 0;
 
         .label {
             border-bottom: 1px solid black;
@@ -42,8 +42,7 @@
         }
     }
 
-    .destination {
-        border-top: 1px solid black;
+    border-top: 1px solid black;
 
         form {
             display: flex;
@@ -84,5 +83,8 @@
                 }
             }
         }
+
+    .destination {
+
     }
 }

@@ -1,9 +1,11 @@
 import axios from 'axios';
 
+const CLEARPAY_API_URL = 'http://localhost:8080/api/';
+
 class ClearPayApi {
 	constructor() {
 		this.api = axios.create({
-			baseURL: 'http://localhost:3030/api/',
+			baseURL: CLEARPAY_API_URL,
 			headers: {
 				'Content-type': 'application/json',
 			},
@@ -35,8 +37,16 @@ class ClearPayApi {
 		return response.data;
 	};
 
-	getWallets = async (customerId) => {
-		const response = await this.api.get(`wallet/${customerId}/customer`, {
+	getCustomer = async (id) => {
+		const response = await this.api.get(`customer/${id}`, {
+			headers: this.getHeaders(),
+		});
+
+		return response.data;
+	};
+
+	getCustomerWallets = async (customerId) => {
+		const response = await this.api.get(`customer/${customerId}/wallet`, {
 			headers: this.getHeaders(),
 		});
 
@@ -59,10 +69,11 @@ class ClearPayApi {
 		return response.data;
 	};
 
-    makePayment = async (originWalletId, destinationWalletId, amount) => {
-		const response = await this.api.post(`wallet/${originWalletId}/payment`, {
+    executeTransfer = async (values) => {
+		const response = await this.api.post(`wallet`, {
 			headers: this.getHeaders(),
-		}, { destinationWalletId, amount });
+			...values
+		});
 
 		return response.data;
 	};

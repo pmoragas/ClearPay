@@ -6,6 +6,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
 import Modal from 'component/Modal';
 import Card from 'component/Card';
+import { executeTransfer } from 'store/customer/actions';
 
 import styles from './styles.module.scss';
 
@@ -20,10 +21,10 @@ const CharacterDetail = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedWallet, setSelectedWallet] = useState(undefined);
     const detailId = params.detailId ? parseInt(params.detailId, 10) : undefined;
-    const { customerDetail } = useSelector((state) => state.customer);
+    const { customerDetail, hasDataChanged } = useSelector((state) => state.customer);
 
     const onSubmitForm = (values) => {
-        //dispatch(login(values));
+        dispatch(executeTransfer(values));
     };
 
     const columns = [
@@ -72,9 +73,8 @@ const CharacterDetail = () => {
 
     useEffect(() => {
         dispatch(getCustomer(detailId));
-    }, [dispatch, detailId]);
+    }, [dispatch, detailId, hasDataChanged]);
 
-    console.log(selectedWallet);
     return (
 
         <div className={styles.container}>
@@ -85,11 +85,11 @@ const CharacterDetail = () => {
                 <div className={styles.personalInfo}>
                     <div className={styles.dataPoint}>
                         <div className={styles.label}>First name</div>
-                        <div className={styles.data}>{customerDetail.first_name}</div>
+                        <div className={styles.data}>{customerDetail.firstName}</div>
                     </div>
                     <div className={styles.dataPoint}>
                         <div className={styles.label}>Last name</div>
-                        <div className={styles.data}>{customerDetail.last_name}</div>
+                        <div className={styles.data}>{customerDetail.lastName}</div>
                     </div>
                     <div className={styles.dataPoint}>
                         <div className={styles.label}>Email</div>

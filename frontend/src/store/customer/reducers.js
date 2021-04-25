@@ -1,8 +1,9 @@
-import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE } from './actionNames';
+import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE, TRANSFER_EXECUTED } from './actionNames';
 
 const INITIAL_STATE = {
 	customers: [],
-	customerDetail: {wallets: []}
+	customerDetail: {wallets: []},
+	hasDataChanged: false
 };
 
 const reducers = (state = INITIAL_STATE, { type, payload }) => {
@@ -11,12 +12,20 @@ const reducers = (state = INITIAL_STATE, { type, payload }) => {
 			return {
 				...state,
 				customers: Object.values(payload),
+				hasDataChanged: false
 			};
 		}
 		case CUSTOMER_DETAIL_UPDATE: {
 			return {
 				...state,
 				customerDetail: payload,
+				hasDataChanged: false
+			};
+		}
+		case TRANSFER_EXECUTED: {
+			return {
+				...state,
+				hasDataChanged: true
 			};
 		}
 		default:

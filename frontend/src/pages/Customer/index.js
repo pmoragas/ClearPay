@@ -24,7 +24,7 @@ const Character = () => {
 			},
         },
         {
-            dataField: 'first_name',
+            dataField: 'firstName',
             text: 'First Name',
             headerStyle: {
 				width: '20%',
@@ -33,7 +33,7 @@ const Character = () => {
 			},
         },
         {
-            dataField: 'last_name',
+            dataField: 'lastName',
             text: 'Last Name',
             headerStyle: {
 				width: '20%',
