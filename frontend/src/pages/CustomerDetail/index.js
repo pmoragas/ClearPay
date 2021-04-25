@@ -6,7 +6,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
 import Modal from 'component/Modal';
 import Card from 'component/Card';
-import { executeTransfer } from 'store/customer/actions';
+import { executeTransfer, resetErrorMsg } from 'store/customer/actions';
 
 import styles from './styles.module.scss';
 
@@ -79,7 +79,10 @@ const CharacterDetail = () => {
     return (
 
         <div className={styles.container}>
-            <Modal visible={isModalVisible} onClose={() => setIsModalVisible(false)}>
+            <Modal visible={isModalVisible} onClose={() => {
+                setIsModalVisible(false);
+                dispatch(resetErrorMsg());
+            }}>
                 <Card wallet={selectedWallet} onSubmit={onSubmitForm} errorMsg={errorMsg}></Card>
             </Modal>
             <div className={styles.customerInfo}>

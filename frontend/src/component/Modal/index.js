@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import styles from './styles.module.scss';
 
-const Modal = ({ children, className, containerClassName, onClose, visible }) => {
+const Modal = ({ children, onClose, visible }) => {
   const handleKeyDown = (e) => {
     const isEsc = e.keyCode === 27;
 
@@ -29,8 +28,8 @@ const Modal = ({ children, className, containerClassName, onClose, visible }) =>
 
   return visible
     ? ReactDOM.createPortal(
-        <div className={classnames(styles.container, className)}>
-          <div className={classnames(styles.content, containerClassName)}>{children}</div>
+        <div className={styles.container}>
+          <div className={styles.content}>{children}</div>
           <div className={styles.overlay} onClick={onClose} />
         </div>,
         document.body
@@ -40,15 +39,11 @@ const Modal = ({ children, className, containerClassName, onClose, visible }) =>
 
 Modal.propTypes = {
 	children: PropTypes.node.isRequired,
-	className: PropTypes.string,
-	containerClassName: PropTypes.string,
 	onClose: PropTypes.func,
 	visible: PropTypes.bool.isRequired,
 };
 
 Modal.defaultProps = {
-	className: undefined,
-	containerClassName: undefined,
 	onClose: () => {},
 };
 

@@ -70,7 +70,7 @@ class ClearPayApi {
 	};
 
     executeTransfer = async (values) => {
-		const response = await this.api.post(`wallet`, {
+		const response = await this.api.post(`wallet/transfer`, {
 			headers: this.getHeaders(),
 			...values
 		});

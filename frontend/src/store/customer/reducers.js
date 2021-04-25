@@ -1,4 +1,4 @@
-import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE, TRANSFER_EXECUTED, TRANSFER_ERROR } from './actionNames';
+import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE, TRANSFER_EXECUTED, TRANSFER_ERROR, RESET_ERROR } from './actionNames';
 
 const INITIAL_STATE = {
 	customers: [],
@@ -34,6 +34,12 @@ const reducers = (state = INITIAL_STATE, { type, payload }) => {
 			return {
 				...state,
 				...payload
+			};
+		}
+		case RESET_ERROR: {
+			return {
+				...state,
+				errorMsg: undefined
 			};
 		}
 		default:

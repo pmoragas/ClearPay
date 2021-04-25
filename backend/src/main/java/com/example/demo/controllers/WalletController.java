@@ -46,7 +46,7 @@ public class WalletController {
     }
 
     @PostMapping(
-            value= "/api/wallet",
+            value= "/api/wallet/transfer",
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     @ResponseBody
     public void transferMoney(@RequestBody TransferOrder transferOrder) {

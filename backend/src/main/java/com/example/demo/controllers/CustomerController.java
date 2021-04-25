@@ -23,7 +23,7 @@ public class CustomerController {
 
     @GetMapping("/api/customer")
     @ResponseBody
-    public List<Customer> getCustomer() {
+    public List<Customer> getCustomers() {
         return db.getCustomers();
     }
 
