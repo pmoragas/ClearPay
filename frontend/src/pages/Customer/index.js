@@ -8,7 +8,7 @@ import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
 import styles from './styles.module.scss';
 import { CUSTOMER_DETAIL_PATH } from 'router/paths';
 
-const Character = () => {
+const Customer = () => {
     const { SearchBar } = Search;
     const dispatch = useDispatch();
     const { customers } = useSelector((state) => state.customer);
@@ -103,4 +103,4 @@ const Character = () => {
     );
 }
 
-export default Character;
+export default Customer;

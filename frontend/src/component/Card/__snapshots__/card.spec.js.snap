@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button snapshot is ok 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="title"
+    >
+      Transfer operation
+    </div>
+    <form>
+      <div
+        class="subtitle"
+      >
+        Origin
+      </div>
+      <label
+        class="inputElem"
+      >
+        Wallet ID
+      </label>
+      <input
+        class="inputElem"
+        id="originWalletId"
+        label="Wallet ID"
+        name="originWalletId"
+        readonly=""
+        required=""
+        type="text"
+        value="abcdefgh"
+      />
+      <div
+        class="dataPoint"
+      >
+        <div
+          class="label"
+        >
+          Amount
+        </div>
+        <div
+          class="data"
+        >
+          1000
+        </div>
+      </div>
+      <div
+        class="subtitle"
+      >
+        Destination
+      </div>
+      <label
+        class="inputElem"
+      >
+        Wallet ID
+      </label>
+      <input
+        class="inputElem"
+        id="destinationWalletId"
+        label="Wallet ID"
+        name="destinationWalletId"
+        required=""
+        type="text"
+      />
+      <label
+        class="inputElem"
+      >
+        Amount
+      </label>
+      <input
+        class="inputElem"
+        id="amount"
+        label="Amount"
+        name="amount"
+        required=""
+        type="number"
+      />
+      <div
+        class="buttonContainer"
+      >
+        <div
+          class="error"
+        />
+        <button
+          class="button"
+          id="submit"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

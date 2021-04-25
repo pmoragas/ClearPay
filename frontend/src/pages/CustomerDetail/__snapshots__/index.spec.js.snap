@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Customer snapshot is ok 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="customerInfo"
+    >
+      <div
+        class="personalInfo"
+      >
+        <div
+          class="dataPoint"
+        >
+          <div
+            class="label"
+          >
+            First name
+          </div>
+          <div
+            class="data"
+          >
+            Jan
+          </div>
+        </div>
+        <div
+          class="dataPoint"
+        >
+          <div
+            class="label"
+          >
+            Last name
+          </div>
+          <div
+            class="data"
+          >
+            Stannard
+          </div>
+        </div>
+        <div
+          class="dataPoint"
+        >
+          <div
+            class="label"
+          >
+            Email
+          </div>
+          <div
+            class="data"
+          >
+            jstannard0@g.co
+          </div>
+        </div>
+      </div>
+      <div
+        class="economicalInfo"
+      >
+        <div
+          class="dataPoint"
+        >
+          <div
+            class="label"
+          >
+            Total amount
+          </div>
+          <div
+            class="data"
+          >
+            1125€
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="wallets"
+    >
+      <div>
+        <label
+          class="search-label"
+          for="search-bar-0"
+        >
+          <span
+            class="sr-only"
+            id="search-bar-0-label"
+          />
+          <input
+            aria-labelledby="search-bar-0-label"
+            class="form-control "
+            id="search-bar-0"
+            placeholder="Search"
+            type="text"
+            value=""
+          />
+        </label>
+        <hr />
+        <div
+          class="react-bootstrap-table"
+        >
+          <table
+            class="table table-bordered"
+          >
+            <thead>
+              <tr>
+                <th
+                  style="width: 80%; text-align: left; text-transform: none;"
+                  tabindex="0"
+                >
+                  Wallet ID
+                </th>
+                <th
+                  style="width: 10%; text-align: left; text-transform: none;"
+                  tabindex="0"
+                >
+                  Amount
+                </th>
+                <th
+                  style="width: 10%; text-align: center; text-transform: none;"
+                  tabindex="0"
+                >
+                  
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="rows"
+              >
+                <td>
+                  aasljdhalsdjhaskdjhahsd
+                </td>
+                <td>
+                  375€
+                </td>
+                <td
+                  style="text-align: center;"
+                >
+                  <button
+                    class="transferButton"
+                  >
+                    Transfer
+                  </button>
+                </td>
+              </tr>
+              <tr
+                class="rows"
+              >
+                <td>
+                  akjsdkajshdkasd9a76d
+                </td>
+                <td>
+                  750€
+                </td>
+                <td
+                  style="text-align: center;"
+                >
+                  <button
+                    class="transferButton"
+                  >
+                    Transfer
+                  </button>
+                </td>
+              </tr>
+              <tr
+                class="rows"
+              >
+                <td>
+                  asidjalsikda9s8d76ad
+                </td>
+                <td>
+                  0€
+                </td>
+                <td
+                  style="text-align: center;"
+                >
+                  <button
+                    class="transferButton"
+                  >
+                    Transfer
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

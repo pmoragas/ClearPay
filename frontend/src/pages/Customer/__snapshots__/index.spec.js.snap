@@ -1,0 +1,594 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Customer snapshot is ok 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <label
+        class="search-label"
+        for="search-bar-0"
+      >
+        <span
+          class="sr-only"
+          id="search-bar-0-label"
+        />
+        <input
+          aria-labelledby="search-bar-0-label"
+          class="form-control "
+          id="search-bar-0"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </label>
+      <hr />
+      <div
+        class="react-bootstrap-table"
+      >
+        <table
+          class="table table-bordered"
+        >
+          <thead>
+            <tr>
+              <th
+                style="width: 15%; text-align: left; text-transform: none;"
+                tabindex="0"
+              >
+                Customer ID
+              </th>
+              <th
+                style="width: 20%; text-align: left; text-transform: none;"
+                tabindex="0"
+              >
+                First Name
+              </th>
+              <th
+                style="width: 20%; text-align: left; text-transform: none;"
+                tabindex="0"
+              >
+                Last Name
+              </th>
+              <th
+                style="width: 30%; text-align: left; text-transform: none;"
+                tabindex="0"
+              >
+                Email
+              </th>
+              <th
+                style="width: 15%; text-align: center; text-transform: none;"
+                tabindex="0"
+              >
+                Link
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                1
+              </td>
+              <td>
+                Jan
+              </td>
+              <td>
+                Stannard
+              </td>
+              <td>
+                jstannard0@g.co
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/1"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                2
+              </td>
+              <td>
+                Nichole
+              </td>
+              <td>
+                Bultitude
+              </td>
+              <td>
+                nbultitude1@fastcompany.com
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/2"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                3
+              </td>
+              <td>
+                Cornela
+              </td>
+              <td>
+                Litel
+              </td>
+              <td>
+                clitel2@t-online.de
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/3"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                4
+              </td>
+              <td>
+                Ulises
+              </td>
+              <td>
+                Moan
+              </td>
+              <td>
+                umoan3@yahoo.co.jp
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/4"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                5
+              </td>
+              <td>
+                Broderick
+              </td>
+              <td>
+                Wraith
+              </td>
+              <td>
+                bwraith4@google.nl
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/5"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                6
+              </td>
+              <td>
+                Andrew
+              </td>
+              <td>
+                Newlan
+              </td>
+              <td>
+                anewlan5@chron.com
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/6"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                7
+              </td>
+              <td>
+                Izak
+              </td>
+              <td>
+                Bowsher
+              </td>
+              <td>
+                ibowsher6@cloudflare.com
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/7"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                8
+              </td>
+              <td>
+                Adam
+              </td>
+              <td>
+                Giannazzo
+              </td>
+              <td>
+                agiannazzo7@yahoo.co.jp
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/8"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                9
+              </td>
+              <td>
+                Darrick
+              </td>
+              <td>
+                Romer
+              </td>
+              <td>
+                dromer8@ihg.com
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/9"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                10
+              </td>
+              <td>
+                Illa
+              </td>
+              <td>
+                Bank
+              </td>
+              <td>
+                ibank9@surveymonkey.com
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/10"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                11
+              </td>
+              <td>
+                Joanie
+              </td>
+              <td>
+                McClifferty
+              </td>
+              <td>
+                jmccliffertya@example.com
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/11"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                12
+              </td>
+              <td>
+                Skippy
+              </td>
+              <td>
+                Ber
+              </td>
+              <td>
+                sberb@simplemachines.org
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/12"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                13
+              </td>
+              <td>
+                Ram
+              </td>
+              <td>
+                Lewsie
+              </td>
+              <td>
+                rlewsiec@theatlantic.com
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/13"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                14
+              </td>
+              <td>
+                Ronalda
+              </td>
+              <td>
+                Foukx
+              </td>
+              <td>
+                rfoukxd@ftc.gov
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/14"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                15
+              </td>
+              <td>
+                Immanuel
+              </td>
+              <td>
+                Brockie
+              </td>
+              <td>
+                ibrockiee@mediafire.com
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/15"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                16
+              </td>
+              <td>
+                Fair
+              </td>
+              <td>
+                Godsal
+              </td>
+              <td>
+                fgodsalf@gov.uk
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/16"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                17
+              </td>
+              <td>
+                Rozanna
+              </td>
+              <td>
+                Wafer
+              </td>
+              <td>
+                rwaferg@vkontakte.ru
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/17"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                18
+              </td>
+              <td>
+                Deck
+              </td>
+              <td>
+                Goodlad
+              </td>
+              <td>
+                dgoodladh@examiner.com
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/18"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                19
+              </td>
+              <td>
+                Weber
+              </td>
+              <td>
+                Ladewig
+              </td>
+              <td>
+                wladewigi@i2i.jp
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/19"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+            <tr
+              style="height: 30px;"
+            >
+              <td>
+                20
+              </td>
+              <td>
+                Stanislaus
+              </td>
+              <td>
+                Gudgen
+              </td>
+              <td>
+                sgudgenj@nhs.uk
+              </td>
+              <td
+                style="text-align: center;"
+              >
+                <a
+                  class="link"
+                  href="/customer/20"
+                >
+                  Open Customer
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;

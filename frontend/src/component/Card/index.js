@@ -11,15 +11,16 @@ const Card = ({wallet, onSubmit, errorMsg}) => {
             <div className={styles.title}>Transfer operation</div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className={styles.subtitle}>Origin</div>
-                <label className={styles.inputElem} for="originWalletId">Wallet ID</label>
+                <label className={styles.inputElem}>Wallet ID</label>
                 <input
+                    id="originWalletId"
                     label='Wallet ID'
                     name="originWalletId"
                     required
                     {...register('originWalletId')}
                     type="text"
                     className={styles.inputElem}
-                    readonly
+                    readOnly
                     value={wallet.id}
                 />
                 <div className={styles.dataPoint}>
@@ -27,8 +28,9 @@ const Card = ({wallet, onSubmit, errorMsg}) => {
                     <div className={styles.data}>{wallet.amount}</div>
                 </div>
                 <div className={styles.subtitle}>Destination</div>
-                <label className={styles.inputElem} for="destinationWalletId">Wallet ID</label>
+                <label className={styles.inputElem}>Wallet ID</label>
                 <input
+                    id="destinationWalletId"
                     label='Wallet ID'
                     name="destinationWalletId"
                     required
@@ -36,8 +38,9 @@ const Card = ({wallet, onSubmit, errorMsg}) => {
                     type="text"
                     className={styles.inputElem}
                 />
-                <label className={styles.inputElem} for="amount">Amount</label>
+                <label className={styles.inputElem}>Amount</label>
                 <input
+                    id="amount"
                     label='Amount'
                     name="amount"
                     required
@@ -47,7 +50,7 @@ const Card = ({wallet, onSubmit, errorMsg}) => {
                 />
                 <div className={styles.buttonContainer}>
                     <div className={styles.error}>{errorMsg}</div>
-                    <button type="submit" className={styles.button}>
+                    <button id="submit" type="submit" className={styles.button}>
                         Submit
                     </button>
                 </div>
@@ -61,11 +64,13 @@ Card.propTypes = {
         id: PropTypes.string,
         amount: PropTypes.number
     }),
+    onSubmit: PropTypes.func,
     errorMsg: PropTypes.string
 };
 
 Card.default = {
 	wallet: {},
+    onSubmit: () => {},
 	errorMsg: undefined
 };
 

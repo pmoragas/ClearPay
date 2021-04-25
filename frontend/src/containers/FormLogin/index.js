@@ -17,19 +17,24 @@ const FormLogin = ({ onSubmitForm, className }) => {
 			<div className={styles.formWrapper}>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<div className={styles.inputWrapper} >
-						<div className={styles.label}>Email</div>
-						<input label='Email' name="email" required {...register('email')}/>
+						<label className={styles.label}>
+							Email
+							<input label='Email' name="email" required {...register('email')}/>
+						</label>
 					</div>
 					<div className={styles.inputWrapper}>
-						<div className={styles.label}>Password</div>
-						<input
-							label='Password'
-							name="password"
-							required
-							{...register('password')}
-							type="password"
-							className={styles.password}
-						/>
+						<label className={styles.label}>
+							Password
+							<input
+								label='Password'
+								name="password"
+								required
+								{...register('password')}
+								type="password"
+								className={styles.password}
+							/>
+						</label>
+
 					</div>
 
 					<div className={styles.buttonContainer}>

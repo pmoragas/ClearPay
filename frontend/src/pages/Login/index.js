@@ -18,14 +18,6 @@ const Login = () => {
   };
 
   useEffect(() => {
-    const isDirectRouting = history.action === 'POP';
-
-    if (isDirectRouting) {
-      const state = { from: {}, forbidden: false };
-
-      history.replace(state);
-    }
-
     if (user) {
       const { from } = location.state || { from: { pathname: CUSTOMERS_PATH } };
 

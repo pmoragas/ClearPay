@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormLogin snapshot is ok 1`] = `
+<div>
+  <div
+    class="formContainer"
+  >
+    <div
+      class="loginTitle"
+    >
+      clearpay admin
+    </div>
+    <div
+      class="formWrapper"
+    >
+      <form>
+        <div
+          class="inputWrapper"
+        >
+          <label
+            class="label"
+          >
+            Email
+            <input
+              label="Email"
+              name="email"
+              required=""
+            />
+          </label>
+        </div>
+        <div
+          class="inputWrapper"
+        >
+          <label
+            class="label"
+          >
+            Password
+            <input
+              class="password"
+              label="Password"
+              name="password"
+              required=""
+              type="password"
+            />
+          </label>
+        </div>
+        <div
+          class="buttonContainer"
+        >
+          <button
+            class="button"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

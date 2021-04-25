@@ -14,7 +14,7 @@ const sumAllAmounts = (wallets) => {
     return wallets.reduce((acc, item) => {return acc + item.amount}, 0);
 }
 
-const CharacterDetail = () => {
+const CustomerDetail = () => {
     const { SearchBar } = Search;
     const dispatch = useDispatch();
     const params = useParams();
@@ -83,7 +83,7 @@ const CharacterDetail = () => {
                 setIsModalVisible(false);
                 dispatch(resetErrorMsg());
             }}>
-                <Card wallet={selectedWallet} onSubmit={onSubmitForm} errorMsg={errorMsg}></Card>
+                <Card wallet={selectedWallet} onSubmit={onSubmitForm} errorMsg={errorMsg}/>
             </Modal>
             <div className={styles.customerInfo}>
                 <div className={styles.personalInfo}>
@@ -134,4 +134,4 @@ const CharacterDetail = () => {
     );
 }
 
-export default CharacterDetail;
+export default CustomerDetail;
