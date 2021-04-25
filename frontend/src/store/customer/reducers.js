@@ -1,8 +1,9 @@
-import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE, TRANSFER_EXECUTED, TRANSFER_ERROR, RESET_ERROR } from './actionNames';
+import { CUSTOMERS_UPDATE, CUSTOMER_DETAIL_UPDATE, TRANSFER_EXECUTED,
+	TRANSFER_ERROR, RESET_ERROR } from './actionNames';
 
 const INITIAL_STATE = {
 	customers: [],
-	customerDetail: {wallets: []},
+	customerDetail: { wallets: [] },
 	hasDataChanged: false,
 	errorMsg: undefined
 };

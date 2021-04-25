@@ -53,22 +53,6 @@ class ClearPayApi {
 		return response.data;
 	};
 
-    getWallet = async (walletId) => {
-		const response = await this.api.get(`wallet/${walletId}`, {
-			headers: this.getHeaders(),
-		});
-
-		return response.data;
-	};
-
-    getWallet = async (walletId) => {
-		const response = await this.api.get(`wallet/${walletId}`, {
-			headers: this.getHeaders(),
-		});
-
-		return response.data;
-	};
-
     executeTransfer = async (values) => {
 		const response = await this.api.post(`wallet/transfer`, {
 			headers: this.getHeaders(),
